@@ -12,6 +12,8 @@ The column title line is ommited from the CSV files. For these files, the title 
 document_id, tweet_id, original_language, labels
 ```
 
+In order to adhere to the content sharing policies of X (formerly known as Twitter), we are not making the textual contents of our dataset public. Please read the instructions below on how to construct the complete dataset.
+
 ## Instructions
 To obtain the text filed of our dataset, please download the un-tagged Twitter 2022 French Presendential Elections coprus from: https://www.kaggle.com/datasets/jeanmidev/french-presidential-online-listener
 
