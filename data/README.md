@@ -21,7 +21,7 @@ Then, match the ```tweet_id``` column of our annotated subset with the ```tweet_
 
 The MT models we used for the tweet translation task are: https://huggingface.co/Helsinki-NLP/opus-mt-fr-en and https://huggingface.co/Helsinki-NLP/opus-mt-en-fr
 
-The final CSV files should have a schema like:
+The final CSV files should have the following columns:
 
 ```
 document_id,tweet_id,original_language,labels,french_text,english_text
