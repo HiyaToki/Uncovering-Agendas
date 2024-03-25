@@ -1,9 +1,9 @@
 # Dataset for Agenda Detection
 
-The train, dev and test split of our annotated Agenda dataset: 
+The annotated Agenda dataset: 
 
 ```
-train.csv, dev.csv, test.csv 
+agenda_dataset.csv 
 ```
 
 The column title line is ommited from the CSV files. For these files, the title line is:
@@ -26,6 +26,8 @@ The final CSV files should have the following columns:
 ```
 document_id,tweet_id,original_language,labels,french_text,english_text
 ```
+
+Or message the authors of the paper for a direct link to download the full dataset.
 
 ## Datasets for RTE
 The pretrain folder is expected to contain the MNLI, SNLI and RTE datasets (not included, download required). 
