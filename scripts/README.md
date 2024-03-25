@@ -8,13 +8,13 @@ Please download and prepare all required data, following instructions found in:
 ```
 /data/
 ```
-First, fine-tune BERT and T5 for the RTE task by running `./scripts/rte_bert/train_bert_rte.py` and `/scripts/rte_t5/train_t5_rte.py`. This will fine-tune the models on the combined (and binarized) RTE/MNLI/SNLI datasets. <br> 
+First, fine-tune BERT and T5 for the RTE task by running `./scripts/rte_bert/train_bert_rte.py` and `/scripts/rte_t5/train_t5_rte.py`. This will fine-tune the models on the combined (and binarized) RTE/MNLI/SNLI datasets. Training should take several hours. <br> 
 
-Second, fine-tune the resulting models for the agenda task by running `./scripts/rte_bert/train_bert_agenda.py` and `/scripts/rte_t5/train_t5_agenda.py`. This will fine-tune the RTE models on the agenda dataset. Since the experiments are done three-fold, the models will be organized under R1, R2, and R3 directories. R**x** indicates the corresponding train/dev/test split. <br>
+Second, fine-tune the resulting models for the agenda task by running `./scripts/rte_bert/train_bert_agenda.py` and `/scripts/rte_t5/train_t5_agenda.py`. This will fine-tune the RTE models on the agenda dataset. Since the experiments are done three-fold, the models will be organized under R1, R2, and R3 directories. R**x** indicates the corresponding train/dev/test split. Trainign should take a few minutes. <br>
 
 Third, run `./scripts/rte_bert/predict_bert_agenda.py` and `/scripts/rte_t5/predict_t5_agenda.py` to generate prediction outputs using the RTE and Agenda fine-tuned models. The results will go under `../evaluations/`. 
 
-Fourth, fine-tune BERT and T5 directly on the agenda dataset, without "pre-training" on RTE. These are the "MLC" models. For that run `./scripts/bert/train_bert_agenda.py` and `/scripts/t5/train_t5_agenda.py`. Since the experiments are done three-fold, there are going to be three models per run. <br>
+Fourth, fine-tune BERT and T5 directly on the agenda dataset, without "pre-training" on RTE. These are the "MLC" models. For that run `./scripts/bert/train_bert_agenda.py` and `/scripts/t5/train_t5_agenda.py`. Since the experiments are done three-fold, there are going to be three models per run. Trainign should take a few minutes. <br>
 
 Fifth, run `./scripts/bert/predict_bert_agenda.py` and `/scripts/t5/predict_t5_agenda.py` to generate prediction outputs using the "MLC" Agenda fine-tuned models. The results will go under `../evaluations/`. 
 
