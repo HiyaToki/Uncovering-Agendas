@@ -6,7 +6,7 @@ Code used for experiments described in the paper "Uncovering Agendas: A Novel Fr
 
 Please download and prepare all required data, following instructions found in: 
 ```
-/data/agenda/
+/data/
 ```
 First, fine-tune BERT and T5 for the RTE task by running `./scripts/rte_bert/train_bert_rte.py` and `/scripts/rte_t5/train_t5_rte.py`. This will fine-tune the models on the combined (and binarized) RTE/MNLI/SNLI datasets. <br> 
 
