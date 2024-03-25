@@ -8,3 +8,5 @@ The massive_RTE and bilingual_RTE directories will contain the binarized dataset
 and 
 
 ```/scripts/rte_translate_data.py```
+
+The translation task might take several hours.
