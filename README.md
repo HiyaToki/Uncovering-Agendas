@@ -1,8 +1,13 @@
 # Uncovering Agendas on Social Media
 
-We are currently cleaning up our code so that is more user friendly. We will post updates soon with instructions how to re-train, evaluate and deploy the models. Thanks!
+The is the repository related to the LREC-COLLING 2024 paper: "Uncovering Agendas: A Novel French & English Dataset for Agenda Detection on Social Media".
 
 Instructions on how to accuire our annotated Agenda dataset can be found under:
 ```
-/data/agenda/
+/data/
+```
+
+Instructions on how replicate our experiments can be found under:
+```
+/scripts/
 ```
